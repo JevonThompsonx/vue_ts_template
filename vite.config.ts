@@ -6,7 +6,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 8080, // Replace with your desired port number
+    port: 8080,
   },
-  plugins: [vue(),tailwindcss(),VueRouter()],
+  plugins: [vue(), tailwindcss(), VueRouter()],
 })
