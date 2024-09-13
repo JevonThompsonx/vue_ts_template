@@ -1,14 +1,17 @@
 {
-  "$schema": "<https://raw.githubusercontent.com/biomejs/biome/main/schema.json>",
+  "$schema": "https://raw.githubusercontent.com/biomejs/biome/main/schema.json",
   "files": {
-    "include": ["src/**/*.{js,ts,vue,css}"]
+    "include": ["src/**/*.{js,ts,jsx,tsx,vue}"]
   },
   "formatter": {
     "enabled": true
   },
   "linter": {
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "noUnusedVariables": "warn",
+      "noExplicitAny": "warn",
+      "vueNoUnusedComponents": "error"
     }
   },
   "organizeImports": {
